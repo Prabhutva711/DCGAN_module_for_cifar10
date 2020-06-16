@@ -152,14 +152,3 @@ def show_images(image_no,latent_points,no_of_images):
   plt.imshow(stack_of_images[image_no-1])
 
 
-
-
-
-show_images(create_images(3,100))
-for i in range(n_samples):
-	# define subplot
-	pyplot.subplot(7, 7, 1 + i)
-	# turn off axis labels
-	pyplot.axis('off')
-	# plot single image
-	pyplot.imshow(X[i])
